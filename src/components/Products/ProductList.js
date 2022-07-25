@@ -1,5 +1,5 @@
-import { useContext, useRef, useState } from "react";
-import CartContext from "../../Store/cart-context";
+import { useState } from "react";
+
 import Modal from "../Modal/Modal";
 import CartAdded from "./CartAdded";
 import ProductItem from "./ProductItem";
