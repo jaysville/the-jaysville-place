@@ -9,8 +9,7 @@ const Product = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [loadedProducts, setLoadedProducts] = useState([]);
 
-
-  useEffect(() => {
+  useEffect(async () => {
     setIsLoading(true);
     const response = await axios.get(
       `https://fakestoreapi.com/products/category/${query}`
