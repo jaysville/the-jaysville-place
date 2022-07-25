@@ -9,7 +9,7 @@ const Product = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [loadedProducts, setLoadedProducts] = useState([]);
 
-  useEffect(async () => {
+  const getProducts = async () => {
     setIsLoading(true);
     const response = await axios.get(
       `https://fakestoreapi.com/products/category/${query}`
@@ -17,6 +17,11 @@ const Product = () => {
     const products = response.data;
     setLoadedProducts(products);
     setIsLoading(false);
+  };
+
+  useEffect(() => {
+    getProducts();
+    // eslint-disable-next-line
   }, []);
 
   return (
