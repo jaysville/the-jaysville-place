@@ -42,7 +42,6 @@
 }
 
 .cart-actions {
-  align-self: flex-end;
   margin: 10px 50px;
   margin-top: auto;
 }
@@ -52,7 +51,7 @@
 }
 .order-btn,
 .cancel-btn {
-  margin: 0 15px;
+  margin: 0 7px;
   width: 100px;
   height: 40px;
   background-color: #ff7700;

@@ -10,10 +10,10 @@ const Navbar = (props) => {
   return (
     <nav className="d-flex justify-content-between">
       <a href="/" id="heading">
-        <h4 className="mx-3">Jay Stores</h4>
+        <h4 className="mx-1">Jay Stores</h4>
       </a>
 
-      <div className="mx-3 d-flex justify-content-between cart-icon">
+      <div className="mx-1 d-flex justify-content-between cart-icon">
         <span onClick={props.onShowCart}>
           <i className="fa-solid fa-2x fa-cart-shopping" id="cartIcon" />
         </span>

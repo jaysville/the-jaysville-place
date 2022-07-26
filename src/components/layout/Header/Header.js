@@ -12,7 +12,7 @@ const Header = () => {
   };
   return (
     <>
-      <header>
+      <header className="my-header">
         <Navbar onShowCart={showCart} />
       </header>
       {cartIsOpen && <Cart onHideCart={hideCart} />}

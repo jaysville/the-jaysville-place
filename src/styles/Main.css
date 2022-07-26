@@ -5,6 +5,9 @@
   font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
+.my-header {
+  margin-bottom: 80px;
+}
 .cart-icon {
   cursor: pointer;
 }
@@ -85,7 +88,7 @@ p {
 }
 
 .selected {
-  height: 15px;
+  height: 7px;
 }
 .productItem {
   width: 450px;
@@ -114,6 +117,7 @@ p {
   font-size: 20px;
   font-weight: bold;
   height: 90px;
+  margin-bottom: 30px;
 }
 .single-product-link {
   text-decoration: none;
