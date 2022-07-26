@@ -14,7 +14,7 @@ const Cart = (props) => {
   const order = () => {
     alert("DETAILS SENT TO YOUR EMAIL");
     props.onHideCart();
-    cartCtx.clearCart();
+
     navigate("/");
   };
 
