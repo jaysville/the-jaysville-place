@@ -4,7 +4,7 @@ const CartAdded = () => {
   return (
     <div>
       <div className="modal-title">
-        <h3>Item(s) Added to Cart</h3>
+        <h3>Added to Cart</h3>
       </div>
       <div className="mt-3">
         <div className="success-checkmark">

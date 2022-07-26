@@ -2,7 +2,7 @@ import categoryList from "../categoryList";
 
 const CategoryLink = () => {
   return (
-    <section className="container container-fluid mb-auto">
+    <section className=" mb-3">
       <div
         className="d-flex justify-content-around flex-wrap"
         id="categoryLinkContainer"

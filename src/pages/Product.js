@@ -30,12 +30,12 @@ const Product = () => {
         {isLoading ? (
           <Loader />
         ) : (
-          <>
+          <div className="px-4">
             <h1 className="text-center my-5">
               SHOP {`${query.toUpperCase()}`}
             </h1>
             <ProductList products={loadedProducts} />
-          </>
+          </div>
         )}
       </Main>
     </>

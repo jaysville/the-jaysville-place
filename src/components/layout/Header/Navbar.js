@@ -10,7 +10,7 @@ const Navbar = (props) => {
   return (
     <nav className="d-flex justify-content-between">
       <a href="/" id="heading">
-        <h4 className="mx-3">The Jaysville Place</h4>
+        <h4 className="mx-3">Jay Stores</h4>
       </a>
 
       <div className="mx-3 d-flex justify-content-between cart-icon">
