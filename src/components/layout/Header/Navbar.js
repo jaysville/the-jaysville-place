@@ -8,9 +8,9 @@ const Navbar = (props) => {
     return currentNo + item.amount;
   }, 0);
   return (
-    <nav className="d-flex justify-content-between py-3">
+    <nav className="d-flex justify-content-between">
       <a href="/" id="heading">
-        <h2 className="mx-3">The Jaysville Place</h2>
+        <h4 className="mx-3">The Jaysville Place</h4>
       </a>
 
       <div className="mx-3 d-flex justify-content-between cart-icon">
