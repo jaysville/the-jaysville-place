@@ -62,19 +62,17 @@ const Cart = (props) => {
         )}
       </div>
 
-      <div className="actions-container">
-        <div className="cart-actions">
-          <h4 className="my-3 ms-auto">Total Amount: ${totalAmount}</h4>
-          <div className="d-flex justify-content-center">
-            <button onClick={props.onHideCart} className="cancel-btn">
-              Cancel
+      <div className="cart-actions">
+        <h4 className="my-3 ms-auto">Total Amount: ${totalAmount}</h4>
+        <div className="d-flex justify-content-center">
+          <button onClick={props.onHideCart} className="cancel-btn">
+            Cancel
+          </button>
+          {hasItems && (
+            <button onClick={order} className="order-btn">
+              Order
             </button>
-            {hasItems && (
-              <button onClick={order} className="order-btn">
-                Order
-              </button>
-            )}
-          </div>
+          )}
         </div>
       </div>
     </Modal>

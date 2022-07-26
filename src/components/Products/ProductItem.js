@@ -25,9 +25,7 @@ const ProductItem = (props) => {
         alt=""
         className="img-fluid img-thumbnail my-image mb-3"
       />
-
       <p className="product-title">{props.title}</p>
-
       <h4>${props.price}</h4>
       <form className="my-2">
         <input

@@ -114,10 +114,10 @@ p {
   height: 293px;
 }
 .product-title {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   height: 90px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .single-product-link {
   text-decoration: none;
