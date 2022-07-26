@@ -75,20 +75,11 @@ const CartProvider = (props) => {
     dispatchCartAction({ type: "REMOVE", id: id });
   };
 
-  const clearCartHandler = () => {
-    dispatchCartAction({ type: "CLEAR_CART" });
-  };
-  useEffect(() => {
-    console.log(cartState.items);
-    localStorage.setItem("cart-data", JSON.stringify(cartState));
-  }, [cartState]);
-
   const cartContext = {
     items: cartState.items,
     totalAmount: cartState.totalAmount,
     addItem: addItemToCartHandler,
     removeItem: removeItemFromCartHandler,
-    clearCart: clearCartHandler,
   };
 
   return (
