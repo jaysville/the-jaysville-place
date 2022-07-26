@@ -12,7 +12,7 @@ const Header = () => {
   };
   return (
     <>
-      <header className="p-3">
+      <header>
         <Navbar onShowCart={showCart} />
       </header>
       {cartIsOpen && <Cart onHideCart={hideCart} />}
