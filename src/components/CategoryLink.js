@@ -1,4 +1,5 @@
 import categoryList from "../categoryList";
+import { Link } from "react-router-dom";
 
 const CategoryLink = () => {
   return (
@@ -9,7 +10,7 @@ const CategoryLink = () => {
       >
         {categoryList.map(({ name, img, id, query }) => {
           return (
-            <a href={`/products/category/${query}`} key={id}>
+            <Link href={`/products/category/${query}`} key={id}>
               <div
                 style={{
                   backgroundImage: `url(${img})`,
@@ -25,7 +26,7 @@ const CategoryLink = () => {
                   <p>SHOP NOW!</p>
                 </div>
               </div>
-            </a>
+            </Link>
           );
         })}
       </div>

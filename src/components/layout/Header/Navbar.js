@@ -1,5 +1,6 @@
 import CartContext from "../../../Store/cart-context";
 import { useContext } from "react";
+import Link from "react-router-dom";
 
 const Navbar = (props) => {
   const cartCtx = useContext(CartContext);
@@ -9,9 +10,9 @@ const Navbar = (props) => {
   }, 0);
   return (
     <nav className="d-flex justify-content-between">
-      <a href="/" id="heading">
+      <Link href="/" id="heading">
         <h4 className="mx-1">Jay Stores</h4>
-      </a>
+      </Link>
 
       <div className="mx-1 d-flex justify-content-between cart-icon">
         <span onClick={props.onShowCart}>
