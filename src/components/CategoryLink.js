@@ -10,7 +10,7 @@ const CategoryLink = () => {
       >
         {categoryList.map(({ name, img, id, query }) => {
           return (
-            <Link href={`/products/category/${query}`} key={id}>
+            <Link to={`/products/category/${query}`} key={id}>
               <div
                 style={{
                   backgroundImage: `url(${img})`,
